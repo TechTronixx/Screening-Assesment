@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="BOGO Offer - Buy One Get One Special Deal"
+    />
+    <title>BOGO Offer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">YAY! It's BOGO</h1>
+
+      <form class="pricing-form">
+        <!-- Unit Options -->
+        <div class="unit-option" data-unit="1">
+          <label class="unit-option__label">
+            <input type="radio" name="unit" value="1" class="sr-only" />
+            <div class="unit-option__content">
+              <div class="unit-option__info">
+                <div class="unit-option__header">
+                  <span class="unit-option__radio"></span>
+                  <span class="unit-option__title">1 Unit</span>
+                  <span class="unit-option__badge">10% Off</span>
+                </div>
+                <span class="unit-option__price-label">Standard Price</span>
+              </div>
+              <div class="unit-option__pricing">
+                <span class="unit-option__current-price">$10.00 USD</span>
+                <span class="unit-option__original-price">$24.00 USD</span>
+              </div>
+            </div>
+          </label>
+          <div class="variant-selector hidden" aria-hidden="true"></div>
+        </div>
+
+        <!-- Most Popular Option -->
+        <div class="unit-option unit-option--popular" data-unit="2">
+          <div class="unit-option__popular-badge">MOST POPULAR</div>
+          <label class="unit-option__label">
+            <input type="radio" name="unit" value="2" class="sr-only" checked />
+            <div class="unit-option__content">
+              <div class="unit-option__info">
+                <div class="unit-option__header">
+                  <span class="unit-option__radio"></span>
+                  <span class="unit-option__title">2 Unit</span>
+                  <span class="unit-option__badge">20% Off</span>
+                </div>
+              </div>
+              <div class="unit-option__pricing">
+                <span class="unit-option__current-price">$18.00 USD</span>
+                <span class="unit-option__original-price">$24.00 USD</span>
+              </div>
+            </div>
+          </label>
+          <div class="variant-selector hidden" aria-hidden="true"></div>
+        </div>
+
+        <div class="unit-option" data-unit="3">
+          <label class="unit-option__label">
+            <input type="radio" name="unit" value="3" class="sr-only" />
+            <div class="unit-option__content">
+              <div class="unit-option__info">
+                <div class="unit-option__header">
+                  <span class="unit-option__radio"></span>
+                  <span class="unit-option__title">3 Unit</span>
+                  <span class="unit-option__badge">30% Off</span>
+                </div>
+              </div>
+              <div class="unit-option__pricing">
+                <span class="unit-option__current-price">$24.00 USD</span>
+                <span class="unit-option__original-price">$24.00 USD</span>
+              </div>
+            </div>
+          </label>
+          <div class="variant-selector hidden" aria-hidden="true"></div>
+        </div>
+      </form>
+
+      <div class="summary">
+        <div class="summary__delivery">Free Delivery</div>
+        <div class="summary__total">Total : $18.00 USD</div>
+      </div>
+
+      <button type="button" class="cart-button">Add to Cart</button>
+
+      <div class="footer">@ Powered by Pumper</div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
